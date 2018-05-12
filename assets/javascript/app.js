@@ -18,7 +18,13 @@ function displayGayGifs() {
             var rating = results[i].rating;
             var p = $("<p>").text("Rating: " + rating);
             var gayImage = $("<img>");
-            gayImage.attr("src", results[i].images.fixed_height.url);
+            var imageURL = results[i].images.fixed_height.url
+            var stillImageURL = results[i].images.fixed_height_still.url;
+            gayImage.attr("src", stillImageURL);
+            gayImage.attr("data-still" , stillImageURL);
+            gayImage.attr("data-animate" , imageURL);
+            gayImage.attr("data-state" , "still");
+            gayImage.addClass("animateThatBitch");
             gayDiv.append(p);
             gayDiv.append(gayImage);
             $("#display-gifs").prepend(gayDiv);
@@ -49,5 +55,18 @@ $("#add-button").on("click", function(event) {
 });
 
 $(document).on("click", ".gay", displayGayGifs);
+
+$(document).on("click" , "img.animateThatBitch" , function() {
+    console.log(this)
+    var state = $(this).attr("data-state");
+
+    if (state === "still") {
+        $(this).attr("src" , $(this).attr("data-animate"));
+        $(this).attr("data-state" , "animate");
+    } else {
+        $(this).attr("src" , $(this).attr("data-still"));
+        $(this).attr("data-state" , "still");
+    }
+}); 
 
 renderButtons();
