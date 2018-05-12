@@ -1,6 +1,16 @@
 body {
-    background: linear-gradient(#f7b9b9, #f7b9d2, #f7d5b9, #f7f4b9,
+    background: linear-gradient(90deg, #f7b9b9, #f7b9d2, #f7d5b9, #f7f4b9,
      #dcf7b9, #b9f7d2, #b9f7ee, #b9d8f7, #b9bdf7, #d2b9f7); 
+    color: #37134c;
+}
+
+#header {
+    background-color: #37134c;
+    color: #c8d9f4;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 6px;
+    margin-top: 5px;
 }
 
 button {
@@ -21,17 +31,46 @@ button:hover {
     color: #c8d9f4;
     background-color: #37134c;
     border-radius: 6px;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 10px;
 }
 
 #gif-input {
     color: #37134c;
     padding: 5px;
     margin: 5px;
+    border-radius: 6px;
 }
 
 #add-button {
     color: #37134c;
     background-color: #c8d9f4;
+    margin-left: 30%;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.image-style {
+    margin: 30px;
+    border-radius: 6px;
+}
+
+#more-styling {
+    color: #37134c;
+    background-color: #c8d9f4;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#display-gifs {
+    color: #c8d9f4;
+    background-color: #37134c;
+    border-radius: 6px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);  
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 10px;  
 }

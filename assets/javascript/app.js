@@ -1,5 +1,5 @@
-var gayArray = ["Cher" , "Elton John" , "Hayley Kiyoko" , "Ru Paul" , "Ariana Grande" , "Celine Dion" ,
-                "Judy Garland" , "Ellen Degeneres" , "George Michael" , "Madonna"];
+var gayArray = ["Cher" , "Elton John" , "Simon Amstell", "John Barrowman" , "Hayley Kiyoko" , "Ru Paul" , "Ariana Grande" , "Celine Dion" ,
+                "Judy Garland" , "Ellen Degeneres" , "George Michael" , "Madonna" , "Samira Wiley"];
 
 function displayGayGifs() {
     var gay = $(this).attr("data-gay");
@@ -14,6 +14,7 @@ function displayGayGifs() {
         $("button").on("click", function() {
         for (var i = 0; i < results.length; i++) {
             var gayDiv = $("<div>");
+            gayDiv.addClass("image-style");
             var rating = results[i].rating;
             var p = $("<p>").text("Rating: " + rating);
             var gayImage = $("<img>");
