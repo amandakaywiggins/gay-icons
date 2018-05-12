@@ -25,8 +25,8 @@ function displayGayGifs() {
             gayImage.attr("data-animate" , imageURL);
             gayImage.attr("data-state" , "still");
             gayImage.addClass("animateThatBitch");
-            gayDiv.append(p);
-            gayDiv.append(gayImage);
+            gayDiv.prepend(p);
+            gayDiv.prepend(gayImage);
             $("#display-gifs").prepend(gayDiv);
         }
         });
