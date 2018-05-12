@@ -1,0 +1,37 @@
+body {
+    background: linear-gradient(#f7b9b9, #f7b9d2, #f7d5b9, #f7f4b9,
+     #dcf7b9, #b9f7d2, #b9f7ee, #b9d8f7, #b9bdf7, #d2b9f7); 
+}
+
+button {
+    color: #c8d9f4;
+    background-color: #37134c;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: #37134c;
+    background-color: #c8d9f4;
+}
+
+#gay-form {
+    color: #c8d9f4;
+    background-color: #37134c;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#gif-input {
+    color: #37134c;
+    padding: 5px;
+    margin: 5px;
+}
+
+#add-button {
+    color: #37134c;
+    background-color: #c8d9f4;
+}
